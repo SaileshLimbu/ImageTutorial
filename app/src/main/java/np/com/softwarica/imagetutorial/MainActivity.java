@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -30,15 +31,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.rdRajesh:
+                Toast.makeText(this, "Rajesh Dai", Toast.LENGTH_SHORT).show();
                 imgDais.setImageResource(R.drawable.rajesh);
                 break;
             case R.id.rdShiva:
+                Toast.makeText(this, "Shiva Dai", Toast.LENGTH_SHORT).show();
                 imgDais.setImageResource(R.drawable.shiva);
                 break;
             case R.id.rdBhuwan:
+                Toast.makeText(this, "Bhuwan Dai", Toast.LENGTH_SHORT).show();
                 imgDais.setImageResource(R.drawable.bhuwan);
                 break;
-
         }
     }
 }
